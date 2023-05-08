@@ -1,0 +1,98 @@
+MAP
+    NAME "Geography Class"
+    IMAGETYPE "png"
+    SIZE 500 500
+    EXTENT -20037508.3427892 -20037508.3427892 20037508.3427892 20037508.3427892
+    IMAGECOLOR "#ddeeff"
+    PROJECTION
+        "init=epsg:3857"
+    END
+    #CONFIG "MS_ERRORFILE" "logs/mapserver.log"
+    #CONFIG "CPL_DEBUG" "ON"
+    #DEBUG 5
+    OUTPUTFORMAT
+        NAME "mvt"
+        DRIVER "MVT"
+        FORMATOPTION "EDGE_BUFFER=20"
+    END
+    WEB
+        METADATA
+            "wms_enable_request" "*"
+            "wms_title" "Test mapfile for MVT development."
+            "wms_onlineresource" "http://localhost/mapserver2/?" 
+            "wms_srs" "epsg:3857" 
+            "wms_allow_getmap_without_styles" "true" 
+        END
+    END
+    LAYER
+        NAME "countries"
+        TYPE POLYGON
+        STATUS ON
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE OGR
+        CONNECTION "./data/ne_10m_admin_0_countries.fgb"
+        CLASSITEM "adm0_a3"
+        CLASS
+            EXPRESSION {ATA}
+            STYLE
+                COLOR "#F0F8FF"
+            END
+        END
+        CLASS
+            EXPRESSION {AFG,ALD,BEN,BLR,BWA,COK,COL,DNK,DOM,ERI,FIN,FRA,FRO,GIB,GNB,GNQ,GRC,GTM,JPN,KIR,LKA,MHL,MMR,MWI,NCL,OMN,RWA,SDS,SMR,SVK,SYR,TCD,TON,URY,WLF}
+            STYLE
+                COLOR "#fdaf6b"
+            END
+        END
+        CLASS
+            EXPRESSION {AZE,BGD,CHL,CMR,CSI,DEU,DJI,GUY,HUN,IOA,JAM,LBN,LBY,LSO,MDG,MKD,MNG,MRT,NIU,NZL,PCN,PYF,SAU,SHN,STP,TTO,UGA,UZB,ZMB}
+            STYLE
+                COLOR "#fdc663"
+            END
+        END
+        CLASS
+            EXPRESSION {AGO,ASM,ATF,BDI,BFA,BGR,BLZ,BRA,CHN,CRI,ESP,HKG,HRV,IDN,IRN,ISR,KNA,LBR,LCA,MAC,MUS,NOR,PLW,POL,PRI,SDN,TUN,UMI,USA,USG,VIR,VUT}
+            STYLE
+                COLOR "#fae364"
+            END
+        END
+        CLASS
+            EXPRESSION {ARE,ARG,BHS,CIV,CLP,DMA,ETH,GAB,GRD,GRL,HMD,IND,IOT,IRL,IRQ,ITA,KOS,LUX,MEX,NAM,NER,PAN,PHL,PRT,RUS,SEN,SUR,TZA,VAT}
+            STYLE
+                COLOR "#d3e46f"
+            END
+        END
+        CLASS
+            EXPRESSION {AUT,BEL,BHR,BMU,BRB,CYN,DZA,EST,FLK,GMB,GUM,HND,JEY,KGZ,LIE,MAF,MDA,NGA,NRU,SLB,SOL,SRB,SWZ,THA,TUR,VEN,VGB}
+            STYLE
+                COLOR "#aadb78"
+            END
+        END
+        CLASS
+            EXPRESSION {AIA,BIH,BLM,BRN,CAF,CHE,COM,CPV,CUB,ECU,ESB,FSM,GAZ,GBR,GEO,KEN,LTU,MAR,MCO,MDV,NFK,NPL,PNG,PRY,QAT,SLE,SPM,SYC,TCA,TKM,TLS,VNM,WEB,WSB,YEM,ZWE}
+            STYLE
+                COLOR "#a3cec5"
+            END
+        END
+        CLASS
+            EXPRESSION {ABW,ALB,AND,ATC,BOL,COD,CUW,CYM,CYP,EGY,FJI,GGY,IMN,KAB,KAZ,KWT,LAO,MLI,MNP,MSR,MYS,NIC,NLD,PAK,PRK,ROU,SGS,SVN,SWE,TGO,TWN,VCT,ZAF}
+            STYLE
+                COLOR "#ceb5cf"
+            END
+        END
+        CLASS
+            EXPRESSION {ARM,ATG,AUS,BTN,CAN,COG,CZE,GHA,GIN,HTI,ISL,JOR,KHM,KOR,LVA,MLT,MNE,MOZ,PER,SAH,SGP,SLV,SOM,TJK,TUV,UKR,WSM}
+            STYLE
+                COLOR "#f3c1d3"
+            END
+        END
+        CLASS
+            EXPRESSION {CNM,KAS,KNM}
+            STYLE
+                COLOR "#ffffff"
+            END
+        END
+    END
+END

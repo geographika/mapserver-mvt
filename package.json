@@ -1,0 +1,16 @@
+{
+  "name": "mapserver-mvt",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "ol": "latest",
+    "ol-mapbox-style": "^10.5.0"
+  }
+}

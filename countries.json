@@ -1,0 +1,166 @@
+{
+    "layers": [
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(ATA)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#f0f8ff"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(AFG|ALD|BEN|BLR|BWA|COK|COL|DNK|DOM|ERI|FIN|FRA|FRO|GIB|GNB|GNQ|GRC|GTM|JPN|KIR|LKA|MHL|MMR|MWI|NCL|OMN|RWA|SDS|SMR|SVK|SYR|TCD|TON|URY|WLF)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#fdaf6b"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(AZE|BGD|CHL|CMR|CSI|DEU|DJI|GUY|HUN|IOA|JAM|LBN|LBY|LSO|MDG|MKD|MNG|MRT|NIU|NZL|PCN|PYF|SAU|SHN|STP|TTO|UGA|UZB|ZMB)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#fdc663"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(AGO|ASM|ATF|BDI|BFA|BGR|BLZ|BRA|CHN|CRI|ESP|HKG|HRV|IDN|IRN|ISR|KNA|LBR|LCA|MAC|MUS|NOR|PLW|POL|PRI|SDN|TUN|UMI|USA|USG|VIR|VUT)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#fae364"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(ARE|ARG|BHS|CIV|CLP|DMA|ETH|GAB|GRD|GRL|HMD|IND|IOT|IRL|IRQ|ITA|KOS|LUX|MEX|NAM|NER|PAN|PHL|PRT|RUS|SEN|SUR|TZA|VAT)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#d3e46f"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(AUT|BEL|BHR|BMU|BRB|CYN|DZA|EST|FLK|GMB|GUM|HND|JEY|KGZ|LIE|MAF|MDA|NGA|NRU|SLB|SOL|SRB|SWZ|THA|TUR|VEN|VGB)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#aadb78"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(AIA|BIH|BLM|BRN|CAF|CHE|COM|CPV|CUB|ECU|ESB|FSM|GAZ|GBR|GEO|KEN|LTU|MAR|MCO|MDV|NFK|NPL|PNG|PRY|QAT|SLE|SPM|SYC|TCA|TKM|TLS|VNM|WEB|WSB|YEM|ZWE)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#a3cec5"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(ABW|ALB|AND|ATC|BOL|COD|CUW|CYM|CYP|EGY|FJI|GGY|IMN|KAB|KAZ|KWT|LAO|MLI|MNP|MSR|MYS|NIC|NLD|PAK|PRK|ROU|SGS|SVN|SWE|TGO|TWN|VCT|ZAF)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#ceb5cf"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(ARM|ATG|AUS|BTN|CAN|COG|CZE|GHA|GIN|HTI|ISL|JOR|KHM|KOR|LVA|MLT|MNE|MOZ|PER|SAH|SGP|SLV|SOM|TJK|TUV|UKR|WSM)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#f3c1d3"
+            },
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "*=",
+                [
+                    "FN_strMatches",
+                    "adm0_a3",
+                    "/(CNM|KAS|KNM)/"
+                ],
+                true
+            ],
+            "id": "",
+            "paint": {
+                "fill-color": "#ffffff"
+            },
+            "type": "fill"
+        }
+    ],
+    "name": "countries",
+    "version": 8
+}
