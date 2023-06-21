@@ -15,6 +15,6 @@
     "geostyler-openlayers-parser": "^4.1.2",
     "geostyler-sld-parser": "^5.0.1",
     "ol": "latest",
-    "ol-mapbox-style": "^10.5.0"
+    "ol-mapbox-style": "^10.6.0"
   }
 }
