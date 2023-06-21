@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "id": "Simple Line Simple Fill",
+      "type": "line",
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "",
+      "paint": {
+        "fill-color": "#f0f8ff",
+        "fill-opacity": 1
+      },
+      "type": "fill"
+    }
+  ],
+  "name": "countries",
+  "version": 8
+}
