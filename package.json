@@ -7,14 +7,14 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.0.4",
+    "vite": "^4.3.9",
     "rollup-plugin-copy": "^3.4.0"
   },
   "dependencies": {
     "geostyler-mapbox-parser": "^3.1.1",
     "geostyler-openlayers-parser": "^4.1.2",
     "geostyler-sld-parser": "^5.0.1",
-    "ol": "latest",
-    "ol-mapbox-style": "^10.5.0"
+    "ol": "^7.4.0",
+    "ol-mapbox-style": "^10.6.0"
   }
 }
