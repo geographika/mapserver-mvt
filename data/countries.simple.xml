@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StyledLayerDescriptor version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <Name>countries</Name>
+    <UserStyle>
+      <Name>countries</Name>
+      <Title>countries</Title>
+      <FeatureTypeStyle>
+        <Rule>
+          <Name/>
+          <!--<Filter xmlns="http://www.opengis.net/ogc"/>-->
+
+          <!--<ogc:Filter>
+            <ogc:PropertyIsLike>
+              <ogc:PropertyName>ADM0_A3</ogc:PropertyName>
+              <ogc:Literal>FRA</ogc:Literal>
+            </ogc:PropertyIsLike>
+          </ogc:Filter>-->
+
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#fdaf6b</CssParameter>
+            </Fill>
+          </PolygonSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
