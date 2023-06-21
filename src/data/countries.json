@@ -1,196 +1,236 @@
 {
-  "version": 8,
-  "name": "countries",
-  "layers": [
-    {
-      "filter": [
-        "==",
+    "version": 8,
+    "name": "countries",
+    "layers": [
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(ATA)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(ATA)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#F0F8FF"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#f0f8ff" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(AFG|ALD|BEN|BLR|BWA|COK|COL|DNK|DOM|ERI|FIN|FRA|FRO|GIB|GNB|GNQ|GRC|GTM|JPN|KIR|LKA|MHL|MMR|MWI|NCL|OMN|RWA|SDS|SMR|SVK|SYR|TCD|TON|URY|WLF)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(AFG|ALD|BEN|BLR|BWA|COK|COL|DNK|DOM|ERI|FIN|FRA|FRO|GIB|GNB|GNQ|GRC|GTM|JPN|KIR|LKA|MHL|MMR|MWI|NCL|OMN|RWA|SDS|SMR|SVK|SYR|TCD|TON|URY|WLF)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#fdaf6b"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#fdaf6b" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(AZE|BGD|CHL|CMR|CSI|DEU|DJI|GUY|HUN|IOA|JAM|LBN|LBY|LSO|MDG|MKD|MNG|MRT|NIU|NZL|PCN|PYF|SAU|SHN|STP|TTO|UGA|UZB|ZMB)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(AZE|BGD|CHL|CMR|CSI|DEU|DJI|GUY|HUN|IOA|JAM|LBN|LBY|LSO|MDG|MKD|MNG|MRT|NIU|NZL|PCN|PYF|SAU|SHN|STP|TTO|UGA|UZB|ZMB)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#fdc663"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#fdc663" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(AGO|ASM|ATF|BDI|BFA|BGR|BLZ|BRA|CHN|CRI|ESP|HKG|HRV|IDN|IRN|ISR|KNA|LBR|LCA|MAC|MUS|NOR|PLW|POL|PRI|SDN|TUN|UMI|USA|USG|VIR|VUT)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(AGO|ASM|ATF|BDI|BFA|BGR|BLZ|BRA|CHN|CRI|ESP|HKG|HRV|IDN|IRN|ISR|KNA|LBR|LCA|MAC|MUS|NOR|PLW|POL|PRI|SDN|TUN|UMI|USA|USG|VIR|VUT)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#fae364"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#fae364" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(ARE|ARG|BHS|CIV|CLP|DMA|ETH|GAB|GRD|GRL|HMD|IND|IOT|IRL|IRQ|ITA|KOS|LUX|MEX|NAM|NER|PAN|PHL|PRT|RUS|SEN|SUR|TZA|VAT)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(ARE|ARG|BHS|CIV|CLP|DMA|ETH|GAB|GRD|GRL|HMD|IND|IOT|IRL|IRQ|ITA|KOS|LUX|MEX|NAM|NER|PAN|PHL|PRT|RUS|SEN|SUR|TZA|VAT)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#d3e46f"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#d3e46f" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(AUT|BEL|BHR|BMU|BRB|CYN|DZA|EST|FLK|GMB|GUM|HND|JEY|KGZ|LIE|MAF|MDA|NGA|NRU|SLB|SOL|SRB|SWZ|THA|TUR|VEN|VGB)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(AUT|BEL|BHR|BMU|BRB|CYN|DZA|EST|FLK|GMB|GUM|HND|JEY|KGZ|LIE|MAF|MDA|NGA|NRU|SLB|SOL|SRB|SWZ|THA|TUR|VEN|VGB)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#aadb78"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#aadb78" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(AIA|BIH|BLM|BRN|CAF|CHE|COM|CPV|CUB|ECU|ESB|FSM|GAZ|GBR|GEO|KEN|LTU|MAR|MCO|MDV|NFK|NPL|PNG|PRY|QAT|SLE|SPM|SYC|TCA|TKM|TLS|VNM|WEB|WSB|YEM|ZWE)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(AIA|BIH|BLM|BRN|CAF|CHE|COM|CPV|CUB|ECU|ESB|FSM|GAZ|GBR|GEO|KEN|LTU|MAR|MCO|MDV|NFK|NPL|PNG|PRY|QAT|SLE|SPM|SYC|TCA|TKM|TLS|VNM|WEB|WSB|YEM|ZWE)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#a3cec5"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#a3cec5" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(ABW|ALB|AND|ATC|BOL|COD|CUW|CYM|CYP|EGY|FJI|GGY|IMN|KAB|KAZ|KWT|LAO|MLI|MNP|MSR|MYS|NIC|NLD|PAK|PRK|ROU|SGS|SVN|SWE|TGO|TWN|VCT|ZAF)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(ABW|ALB|AND|ATC|BOL|COD|CUW|CYM|CYP|EGY|FJI|GGY|IMN|KAB|KAZ|KWT|LAO|MLI|MNP|MSR|MYS|NIC|NLD|PAK|PRK|ROU|SGS|SVN|SWE|TGO|TWN|VCT|ZAF)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#ceb5cf"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#ceb5cf" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(ARM|ATG|AUS|BTN|CAN|COG|CZE|GHA|GIN|HTI|ISL|JOR|KHM|KOR|LVA|MLT|MNE|MOZ|PER|SAH|SGP|SLV|SOM|TJK|TUV|UKR|WSM)"
-          ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(ARM|ATG|AUS|BTN|CAN|COG|CZE|GHA|GIN|HTI|ISL|JOR|KHM|KOR|LVA|MLT|MNE|MOZ|PER|SAH|SGP|SLV|SOM|TJK|TUV|UKR|WSM)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#f3c1d3"
+            }
         },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#f3c1d3" }
-    },
-    {
-      "filter": [
-        "==",
         {
-          "name": "strMatches",
-          "args": [
-            {
-              "name": "property",
-              "args": [ "ADM0_A3" ]
-            },
-            "(CNM|KAS|KNM)"
-          ]
-        },
-        true
-      ],
-      "id": "",
-      "type": "fill",
-      "paint": { "fill-color": "#ffffff" }
-    }
-  ]
+            "filter": [
+                "==",
+                {
+                    "name": "strMatches",
+                    "args": [
+                        {
+                            "name": "property",
+                            "args": [
+                                "ADM0_A3"
+                            ]
+                        },
+                        "(CNM|KAS|KNM)"
+                    ]
+                },
+                true
+            ],
+            "id": "",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#ffffff"
+            }
+        }
+    ]
 }
