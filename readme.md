@@ -6,7 +6,9 @@ thanks to https://geostyler.org/.
 Styles can be written once, and used for both vector tiles and WMS services, allowing the same source data to
 be easily served out to different clients and platforms. 
 
-![Video Name](https://raw.githubusercontent.com/geographika/mapserver-mvt/main/demo.mp4)
+![Demo GIF](https://raw.githubusercontent.com/geographika/mapserver-mvt/main/demo.gif)
+
+![Demo Video](https://raw.githubusercontent.com/geographika/mapserver-mvt/main/demo.mp4)
 
 ## Building and Deploying
 
