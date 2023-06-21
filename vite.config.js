@@ -2,6 +2,7 @@ import copy from 'rollup-plugin-copy'
 
 export default {
   build: {
+    base: '', // otherwise assets are located at /assets
     sourcemap: true,
     rollupOptions: {
       plugins: [
