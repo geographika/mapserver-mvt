@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<StyledLayerDescriptor version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StyledLayerDescriptor version="1.0.0"
+  xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+  xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:se="http://www.opengis.net/se">
   <NamedLayer>
     <Name>countries</Name>
     <UserStyle>
@@ -7,17 +11,32 @@
       <Title>countries</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>/(ATA)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#f0f8ff</CssParameter>
+              <CssParameter name="fill">#F0F8FF</CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(AFG|ALD|BEN|BLR|BWA|COK|COL|DNK|DOM|ERI|FIN|FRA|FRO|GIB|GNB|GNQ|GRC|GTM|JPN|KIR|LKA|MHL|MMR|MWI|NCL|OMN|RWA|SDS|SMR|SVK|SYR|TCD|TON|URY|WLF)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#fdaf6b</CssParameter>
@@ -25,8 +44,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(AZE|BGD|CHL|CMR|CSI|DEU|DJI|GUY|HUN|IOA|JAM|LBN|LBY|LSO|MDG|MKD|MNG|MRT|NIU|NZL|PCN|PYF|SAU|SHN|STP|TTO|UGA|UZB|ZMB)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#fdc663</CssParameter>
@@ -34,8 +61,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(AGO|ASM|ATF|BDI|BFA|BGR|BLZ|BRA|CHN|CRI|ESP|HKG|HRV|IDN|IRN|ISR|KNA|LBR|LCA|MAC|MUS|NOR|PLW|POL|PRI|SDN|TUN|UMI|USA|USG|VIR|VUT)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#fae364</CssParameter>
@@ -43,8 +78,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(ARE|ARG|BHS|CIV|CLP|DMA|ETH|GAB|GRD|GRL|HMD|IND|IOT|IRL|IRQ|ITA|KOS|LUX|MEX|NAM|NER|PAN|PHL|PRT|RUS|SEN|SUR|TZA|VAT)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d3e46f</CssParameter>
@@ -52,8 +95,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(AUT|BEL|BHR|BMU|BRB|CYN|DZA|EST|FLK|GMB|GUM|HND|JEY|KGZ|LIE|MAF|MDA|NGA|NRU|SLB|SOL|SRB|SWZ|THA|TUR|VEN|VGB)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#aadb78</CssParameter>
@@ -61,8 +112,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(AIA|BIH|BLM|BRN|CAF|CHE|COM|CPV|CUB|ECU|ESB|FSM|GAZ|GBR|GEO|KEN|LTU|MAR|MCO|MDV|NFK|NPL|PNG|PRY|QAT|SLE|SPM|SYC|TCA|TKM|TLS|VNM|WEB|WSB|YEM|ZWE)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#a3cec5</CssParameter>
@@ -70,8 +129,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(ABW|ALB|AND|ATC|BOL|COD|CUW|CYM|CYP|EGY|FJI|GGY|IMN|KAB|KAZ|KWT|LAO|MLI|MNP|MSR|MYS|NIC|NLD|PAK|PRK|ROU|SGS|SVN|SWE|TGO|TWN|VCT|ZAF)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#ceb5cf</CssParameter>
@@ -79,8 +146,16 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>
+                  /(ARM|ATG|AUS|BTN|CAN|COG|CZE|GHA|GIN|HTI|ISL|JOR|KHM|KOR|LVA|MLT|MNE|MOZ|PER|SAH|SGP|SLV|SOM|TJK|TUV|UKR|WSM)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#f3c1d3</CssParameter>
@@ -88,8 +163,15 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name/>
-          <Filter xmlns="http://www.opengis.net/ogc"/>
+          <Filter>
+            <Function name="equalTo">
+              <Function name="strMatches">
+                <PropertyName>ADM0_A3</PropertyName>
+                <Literal>/(CNM|KAS|KNM)/</Literal>
+              </Function>
+              <Literal>true</Literal>
+            </Function>
+          </Filter>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#ffffff</CssParameter>
