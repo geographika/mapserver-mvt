@@ -31,9 +31,14 @@ MAP
         PROJECTION
             "init=epsg:4326"
         END
+        METADATA
+            "gml_include_items" "ADM0_A3" # note the field name is case-sensitive for client-side filters
+            "gml_types" "auto"
+            #"ows_featureid" "NE_ID"
+        END
         CONNECTIONTYPE OGR
         CONNECTION "./data/ne_10m_admin_0_countries.fgb"
-        CLASSITEM "adm0_a3"
+        CLASSITEM "ADM0_A3"
         CLASS
             EXPRESSION {ATA}
             STYLE
@@ -42,6 +47,7 @@ MAP
         END
         CLASS
             EXPRESSION {AFG,ALD,BEN,BLR,BWA,COK,COL,DNK,DOM,ERI,FIN,FRA,FRO,GIB,GNB,GNQ,GRC,GTM,JPN,KIR,LKA,MHL,MMR,MWI,NCL,OMN,RWA,SDS,SMR,SVK,SYR,TCD,TON,URY,WLF}
+            # EXPRESSION ("[ADM0_A3]" = "FRA")
             STYLE
                 COLOR "#fdaf6b"
             END

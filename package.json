@@ -10,6 +10,9 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
+    "geostyler-mapbox-parser": "^3.1.1",
+    "geostyler-openlayers-parser": "^4.1.2",
+    "geostyler-sld-parser": "^5.0.1",
     "ol": "latest",
     "ol-mapbox-style": "^10.5.0"
   }
