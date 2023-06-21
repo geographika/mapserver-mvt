@@ -8,7 +8,7 @@ import VectorTileSource from 'ol/source/VectorTile.js'
 import MVT from 'ol/format/MVT.js'
 import MapboxParser from 'geostyler-mapbox-parser'
 import OpenLayersParser from 'geostyler-openlayers-parser'
-// import SLDParser from 'geostyler-sld-parser'
+import SLDParser from 'geostyler-sld-parser'
 
 import { setupInteractions } from './interactions.js'
 
@@ -75,7 +75,6 @@ const map = new Map({
 
 setupInteractions(map, vectorTileLayer)
 
-const mbParser = new MapboxParser()
 const olParser = new OpenLayersParser()
 
 // Wrapper function
@@ -88,31 +87,34 @@ const withLogging = (fn) => {
     }
 }
 
-fetch('data/countries.json')
-    .then((r) => r.json())
-    .then(async (myStyle) => {
-        const { output: gsStyle } = await mbParser.readStyle(myStyle)
-        const { output: olStyle } = await olParser.writeStyle(gsStyle)
-        console.log(olStyle)
-        vectorTileLayer.setStyle(withLogging(olStyle))
+const useSLD = true
 
-        if (map.getLayers().getArray().indexOf(vectorTileLayer) === -1) {
-            map.addLayer(vectorTileLayer)
-        }
-    })
+if (useSLD) {
+    const sldParser = new SLDParser()
 
-// const sldParser = new SLDParser()
-// fetch('data/countries.simple.xml')
-//    .then((r) => r.text())
-//    .then(async (myStyle) => {
+    fetch('data/countries.xml')
+        .then((r) => r.text())
+        .then(async (myStyle) => {
+            const { output: gsStyle } = await sldParser.readStyle(myStyle)
+            const { output: olStyle } = await olParser.writeStyle(gsStyle)
+            vectorTileLayer.setStyle(olStyle)
+            if (map.getLayers().getArray().indexOf(vectorTileLayer) === -1) {
+                map.addLayer(vectorTileLayer)
+            }
+        })
+} else {
+    const mbParser = new MapboxParser()
 
-//        // const { output: gsStyle } = await mbParser.readStyle(myStyle);
-//        const { output: gsStyle } = await sldParser.readStyle(myStyle);
-//        const { output: olStyle } = await olParser.writeStyle(gsStyle);
+    fetch('data/countries.json')
+        .then((r) => r.json())
+        .then(async (myStyle) => {
+            const { output: gsStyle } = await mbParser.readStyle(myStyle)
+            const { output: olStyle } = await olParser.writeStyle(gsStyle)
+            console.log(olStyle)
+            vectorTileLayer.setStyle(withLogging(olStyle))
 
-//        vectorTileLayer.setStyle(olStyle)
-
-//        if (map.getLayers().getArray().indexOf(vectorTileLayer) === -1) {
-//            map.addLayer(vectorTileLayer);
-//        }
-//    });
+            if (map.getLayers().getArray().indexOf(vectorTileLayer) === -1) {
+                map.addLayer(vectorTileLayer)
+            }
+        })
+}

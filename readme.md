@@ -1,13 +1,24 @@
 # MapServer, Vector Tiles, and OpenLayers
 
+This example project uses MapServer to serve out vector tiles, while reusing the symbology from the MapServer Mapfile,
+thanks to https://geostyler.org/.
+
+Styles can be written once, and used for both vector tiles and WMS services, allowing the same source data to
+be easily served out to different clients and platforms. 
+
+![Video Name](https://raw.githubusercontent.com/geographika/mapserver-mvt/main/demo.mp4)
+
 ## Building and Deploying
 
-To run:
+A local version of MapServer can be setup to run locally using the contents of the `/mapserver` folder, which
+contains the [source Mapfile](./mapserver/mvt.map) and a sample countries dataset in a [FlatGeobuf](http://flatgeobuf.org/) format.
+Alternatively the default MapServer URL `https://api.mapserverstudio.net/mapserver/?map=/etc/mapserver/mapfiles/mvt.map&` can be used. 
 
-Then change into the `mapserver-mvt` directory and start a development server (available at http://localhost:5173):
+Clone this repository, then change into the `mapserver-mvt` directory and start a development server (available at http://localhost:5173):
 
 ```
 cd D:\GitHub\mapserver-mvt
+npm install
 npm start
 ```
 
@@ -20,13 +31,16 @@ npm run build
 
 Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
 
-
-## How it Works?
+## How it Works
 
 ```ps1
 cd D:\GitHub\mapserver-mvt
 npm install geostyler-cli
 geostyler-cli -s mapfile -t mapbox -o ./src/data/countries.json mapserver/mvt.map
+
+# for SLD output (currently broken)
+# geostyler-cli -s mapfile -t sld -o ./src/data/countries.xml mapserver/mvt.map
+
 ```
 
 This converts the symbology in the Mapfile to a MapBox style in a JSON format. 
