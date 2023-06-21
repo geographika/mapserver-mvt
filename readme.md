@@ -3,6 +3,8 @@
 This example project uses MapServer to serve out vector tiles, while reusing the symbology from the MapServer Mapfile,
 thanks to https://geostyler.org/.
 
+See the online demo at https://geographika.github.io/mapserver-mvt/
+
 Styles can be written once, and used for both vector tiles and WMS services, allowing the same source data to
 be easily served out to different clients and platforms. 
 
@@ -51,7 +53,7 @@ END
 ```
 
 Within OpenLayers a custom tile function is used to retrieve these tiles through a "WMS facade". This approach was originally created
-by @chrismayer as part of the [cpsi-mapview project](https://github.com/compassinformatics/cpsi-mapview/pull/120). The functions below
+by [@chrismayer](https://github.com/chrismayer) as part of the [cpsi-mapview project](https://github.com/compassinformatics/cpsi-mapview/pull/120). The functions below
 can be seen in [main.js](./src/main.js). 
 
 ```js

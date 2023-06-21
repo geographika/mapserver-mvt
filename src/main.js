@@ -87,7 +87,7 @@ const withLogging = (fn) => {
     }
 }
 
-const useSLD = true
+const useSLD = false
 
 if (useSLD) {
     const sldParser = new SLDParser()
