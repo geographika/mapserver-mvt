@@ -12,7 +12,7 @@ import OpenLayersParser from "geostyler-openlayers-parser";
 import SLDParser from 'geostyler-sld-parser';
 import Overlay from 'ol/Overlay.js';
 
-const wmsUrl = 'http://localhost/mapserver2/?map=D:/GitHub/mapserver-mvt/demo.map';
+const wmsUrl = 'http://localhost/mapserver2/?map=D:/GitHub/mapserver-mvt/mapserver/demo.map';
 
 const templateUrl = wmsUrl + "&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=countries&CRS=EPSG:3857&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=mvt";
 
@@ -114,7 +114,7 @@ const withLogging = (fn) => {
 };
 
 
-fetch('countries.json')
+fetch('data/countries.json')
     .then((r) => r.json())
     .then(async (myStyle) => {
 
@@ -139,7 +139,7 @@ const selectStyle = new Style({
     }),
 });
 
-//fetch('countries.simple.xml')
+//fetch('data/countries.simple.xml')
 //    .then((r) => r.text())
 //    .then(async (myStyle) => {
 
