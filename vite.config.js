@@ -12,7 +12,7 @@ export default {
             plugins: [
                 copy({
                     targets: [
-                        { src: 'data/*.json', dest: 'dist/data' }
+                        { src: '/src/data/*.json', dest: 'dist/data' }
                     ],
                     hook: 'writeBundle'
                 })
